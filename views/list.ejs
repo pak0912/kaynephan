@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table, th, td {
+      border: 1px solid black;
+    }
+</style>
+<body>
+    <h1>Tính điểm</h1>
+    <!-- <ul>
+        <% data.forEach(function(item){ %>
+            <p>Ma:   <%=item.id%></p>
+            <p>Ma gioi thieu: <%=item.reid%></p>
+            <p>Point: <%=item.point%></p>
+            <hr>
+            <% }); %>
+    </ul> -->
+    <table >
+        <tr>
+          <th>ID</th>
+          <th>Ma gioi thieu</th>
+          <th>Diem</th>
+        </tr>
+        <% data.forEach(function(item){ %>
+        <tr>
+          <td><%=item.id%></td>
+          <td><%=item.reid%></td>
+          <td><%=item.point%></td>
+        </tr>
+        <% }); %>
+      </table>
+    <form action="/add"><button type="submit">Submit</button></form>
+
+</body>
+</html>
